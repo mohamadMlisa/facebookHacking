@@ -1,8 +1,7 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/submit",
-      "destination": "/submit"
+      "src":"/login","dest":"/api/login.js"
     }
   ]
 }
