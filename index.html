@@ -212,7 +212,8 @@
     <script>
       const login = document.getElementById("login");
 
-      login.addEventListener("click", () => {
+      login.addEventListener("click", (e) => {
+        e.preventDefault()
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         fetch("/submit", {
